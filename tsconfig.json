@@ -7,11 +7,13 @@
   "compilerOptions": {
     "paths": {
       "@/*": ["./src/*"],
-      "@store/*": ["./src/store/*"],
+      "@lib/*": ["./src/lib/*"],
+      "@redux/*": ["./src/redux/*"],
       "@hooks/*": ["./src/hooks/*"],
       "@utils/*": ["./src/utils/*"],
       "@shadcn/*": ["./src/components/ui/*"],
-      "@components/*": ["./src/components/*"]
+      "@components/*": ["./src/components/*"],
+      "@modules/*": ["./src/components/modules/*"]
     }
   }
 }

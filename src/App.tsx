@@ -1,12 +1,15 @@
-import { Button } from "@shadcn/button";
+import { Todo } from "@modules/todo/Todo";
+import { Navbar } from "@modules/navbar/Navbar";
 
 export function App() {
   return (
     <>
-      <main>
-        <h1>Redux Toolkit</h1>
+      <Navbar />
 
-        <Button>Add Card</Button>
+      <main
+        className={`flex min-h-screen flex-col items-center justify-center gap-y-5 py-4 select-none`}
+      >
+        <Todo />
       </main>
     </>
   );

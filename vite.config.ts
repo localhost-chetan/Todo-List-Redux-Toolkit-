@@ -15,6 +15,7 @@ export default defineConfig({
       '@hooks': path.resolve(__dirname, './src/hooks'),
       '@shadcn': path.resolve(__dirname, './src/components/ui'),
       '@components': path.resolve(__dirname, './src/components'),
+      '@modules': path.resolve(__dirname, './src/components/modules'),
     },
   }
 })
