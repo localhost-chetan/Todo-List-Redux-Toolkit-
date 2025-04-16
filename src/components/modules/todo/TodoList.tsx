@@ -42,7 +42,7 @@ export function TodoList({
             Nothing to show
           </p>
         ) : (
-          <div>
+          <div className={`space-y-3`}>
             {todos.map((todo) => (
               <TodoItem
                 key={todo.id}

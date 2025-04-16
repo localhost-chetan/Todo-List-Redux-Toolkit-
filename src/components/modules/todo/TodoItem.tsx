@@ -21,7 +21,10 @@ export function TodoItem({
 
   return (
     <div className={`flex items-center justify-between gap-x-4`}>
-      <div className={`flex items-center gap-x-2`}>
+      <div
+        title={todoTitle}
+        className={`flex grow cursor-pointer items-center gap-x-2 wrap-break-word`}
+      >
         <Checkbox
           id={checkboxID}
           className={`size-5`}
@@ -31,7 +34,7 @@ export function TodoItem({
 
         <Label
           htmlFor={checkboxID}
-          className={`text-md cursor-pointer ${isCompleted && "line-through"}`}
+          className={`text-md line-clamp-3 max-w-80 cursor-pointer text-ellipsis ${isCompleted && "line-through"}`}
         >
           {todoTitle}
         </Label>
